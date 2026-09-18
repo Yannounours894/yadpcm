@@ -73,6 +73,7 @@ int main(int argc, char* argv[]) {
 		fprintf(stderr, "[FATAL ERROR] REQUESTED: %d\n", SAMPLE_RATE);
 		fprintf(stderr, "[FATAL ERROR] GOT: %zu\n", header.sample_rate);
 		fprintf(stderr, "[FATAL ERROR] File may be corrupted!\n");
+		free(yadpcm_buf);
 		return EXIT_FAILURE;
 	}
 

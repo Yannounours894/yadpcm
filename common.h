@@ -11,7 +11,6 @@
 
 #include <stdint.h>
 #include <stddef.h>
-#include <stdbool.h>
 
 #define IDX_TBL_SIZE 16
 #define STP_TBL_SIZE 89
