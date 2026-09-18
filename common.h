@@ -65,7 +65,7 @@ typedef struct {
 #pragma pack(pop)
 
 /*
-	magic = 6 bytes, sample_rate = 8 bytes, chan_count = 8 bytes, bits_per_sample = 8 bytes, total_samples = 8 bytes.
+	magic = 6 bytes, sample_rate = 8 bytes, channels_count = 8 bytes, bits_per_sample = 8 bytes, total_samples = 8 bytes.
 	6 + 8 + 8 + 8 + 8 = 38
 */ 
 static_assert(sizeof(YADPCMHeader) == 38, "YADPCMHeader must be 38 bytes, 64bit target required!\n");

@@ -1,7 +1,7 @@
 # yadpcm
 Note Part 1: It seems that GitHub now uses Copilot by default for commit names/descriptions, really annoying.
 
-Note Part 2: This is why in some prior commits about README.md has weird descriptions.... I hate GitHub...
+Note Part 2: This is why in some prior commits about README.md have weird descriptions.... I hate GitHub...
 
 (It took me quite a few minutes to notice it...)
 

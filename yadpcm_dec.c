@@ -64,8 +64,9 @@ int main(int argc, char* argv[]) {
 		return EXIT_FAILURE;
 	}
 
+	// Yeah, I'm pretty dumb, size_t is UNSIGNED, why did my brain think it was SIGNED?????
 	// Only supported sample rate is 22050Hz(22.05kHz) for now.
-	// If a YADPCM file is corrupted, it could have either a zero or non-zero sample_rate value.
+	// If a YADPCM file is corrupted, it could have a sample_rate value equal to zero.
 	// Even without talking about corruption, it's a good idea to check sample_rate against supported sample rates!
 	if (header.sample_rate != SAMPLE_RATE) {
 		fprintf(stderr, "[FATAL ERROR] The reported Sample Rate in the YADPCM file header is incorrect!\n");
