@@ -12,9 +12,13 @@ My code is licensed under the MIT license, feel free to redistribute and/or modi
 
 
 common.h = Header containing common things shared between yadpcm_enc.c and yadpcm_dec_lib.h.
+
 yadpcm_enc.c = The encoder, it outputs a .yadpcm file.
+
 yadpcm_dec_lib.h = The actual decoder as a library.
+
 yadpcm_dec.c = The decoder that decodes to a file.
+
 yadpcm_player.c = A very simple YADPCM audio player using yadpcm_dec_lib.h for decoding and pulseaudio/pulseaudio-simple for playback on headphones/speakers.
 
 
