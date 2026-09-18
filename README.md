@@ -34,6 +34,17 @@ Here is the ffmpeg command to convert your Mono/Stereo audio file into Mono 22.0
 $ ffmpeg -i INPUT.EXT -c:a pcm_s16le -ar 22050 -ac 1 -f s16le OUTPUT.raw
 ```
 
+The YADPCM audio player doesn't have looping nor volume control for now(I'm lazy).
+
+For looping you can do something like:
+```console
+$ for i in {1..20}; do clear; ./yadpcm_player your_file.yadpcm; done
+```
+
+For volume control, both KDE and GNOME offer volume control per application/process.
+
+(Tho, for GNOME, volume control per app/process is slightly hidden, and don't ask me why, I'm not a GNOME dev)
+
 
 Note: Read comments in common.h for compatible targets(CPUs, compilers, OSes, etc)!
 
