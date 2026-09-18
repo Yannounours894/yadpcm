@@ -24,6 +24,11 @@ $ ffmpeg -i INPUT.EXT -c:a pcm_s16le -ar 22050 -ac 1 -f s16le OUTPUT.raw
 ```
 
 
+Note: Read comments in common.h for compatible targets(CPUs, compilers, OSes, etc)!
+
+
+
+
 Have fun!
 
 
